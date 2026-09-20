@@ -1,0 +1,221 @@
+css
+/* 页面整体 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background-color: #f2f5f8;
+    color: #333;
+}
+
+/* 页面头部 */
+header {
+    text-align: center;
+    background-color: #4a90e2;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* 主体区域 */
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* 每个内容模块 */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+    border-left: 5px solid #4a90e2;
+    padding-left: 10px;
+}
+
+/* 表单 */
+form {
+    line-height: 1.8;
+}
+
+form p {
+    margin: 18px 0;
+}
+
+/* 输入框 */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 300px;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 输入框获得焦点 */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* 单选框和复选框 */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* 文件上传 */
+input[type="file"] {
+    padding: 6px;
+}
+
+/* 文本域 */
+textarea {
+    width: 500px;
+    resize: vertical;
+    vertical-align: top;
+}
+
+/* 按钮 */
+button {
+    padding: 10px 25px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 鼠标移动到按钮 */
+button:hover {
+    background-color: #357abd;
+}
+
+/* 重置按钮 */
+button[type="reset"] {
+    background-color: #777;
+}
+
+button[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* 列表 */
+ul,
+ol {
+    line-height: 2;
+}
+
+dl {
+    line-height: 1.8;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 25px;
+    color: #666;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #eaf3ff;
+    font-weight: bold;
+}
+
+/* 表格鼠标悬停 */
+tbody tr:hover {
+    background-color: #f5f9ff;
+}
+
+/* 页面底部 */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 手机屏幕适配 */
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

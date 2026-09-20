@@ -1,0 +1,324 @@
+html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>用户注册</h1>
+        <link rel="stylesheet" href="style.css">
+        <p>欢迎注册我们的会员账号</p>
+    </header>
+
+    <main>
+
+        <!-- 注册表单 -->
+        <section>
+            <h2>注册信息</h2>
+
+            <form id="registerForm">
+
+                <!-- 用户名 -->
+                <p>
+                    <label for="username">用户名：</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        required
+                    >
+                </p>
+
+                <!-- 密码 -->
+                <p>
+                    <label for="password">密码：</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="6-16 位字符"
+                        required
+                    >
+                </p>
+
+                <!-- 确认密码 -->
+                <p>
+                    <label for="confirmPassword">确认密码：</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        required
+                    >
+                </p>
+
+                <!-- 性别 -->
+                <p>
+                    性别：
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="男"
+                        checked
+                    >
+                    <label for="male">男</label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="女"
+                        >
+                        女
+                    </label>
+                </p>
+
+                <!-- 出生日期 -->
+                <p>
+                    <label for="birthday">出生日期：</label>
+                    <input
+                        type="date"
+                        id="birthday"
+                        name="birthday"
+                    >
+                </p>
+
+                <!-- 邮箱 -->
+                <p>
+                    <label for="email">邮箱：</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <!-- 手机号 -->
+                <p>
+                    <label for="phone">手机号：</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{11}"
+                        placeholder="请输入11位手机号"
+                        required
+                    >
+                </p>
+
+                <!-- 兴趣爱好 -->
+                <p>
+                    兴趣爱好：
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="reading"
+                        >
+                        阅读
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="music"
+                        >
+                        音乐
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="sports"
+                        >
+                        运动
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobby"
+                            value="game"
+                        >
+                        游戏
+                    </label>
+                </p>
+
+                <!-- 头像上传 -->
+                <p>
+                    <label for="avatar">头像上传：</label>
+                    <input
+                        type="file"
+                        id="avatar"
+                        name="avatar"
+                        accept="image/*"
+                        multiple
+                    >
+                </p>
+
+                <!-- 所在城市 -->
+                <p>
+                    <label for="city">所在城市：</label>
+                    <select id="city" name="city">
+                        <option value="长沙" selected>长沙</option>
+                        <option value="株洲">株洲</option>
+                        <option value="湘潭">湘潭</option>
+                        <option value="常德">常德</option>
+                    </select>
+                </p>
+
+                <!-- 个人简介 -->
+                <p>
+                    <label for="bio">个人简介：</label><br>
+                    <textarea
+                        id="bio"
+                        name="bio"
+                        rows="4"
+                        cols="50"
+                        placeholder="请输入个人简介"
+                    ></textarea>
+                </p>
+
+                <!-- 按钮 -->
+                <p>
+                    <button type="submit">注册</button>
+                    <button type="reset">重置</button>
+                </p>
+
+            </form>
+        </section>
+
+
+        <!-- 注册须知 -->
+        <section>
+            <h2>注册须知</h2>
+
+            <ul>
+                <li>用户名不能为空。</li>
+                <li>密码建议使用6-16位字符。</li>
+                <li>请输入正确的邮箱和手机号。</li>
+                <li>头像只支持图片格式。</li>
+            </ul>
+        </section>
+
+
+        <!-- 注册步骤 -->
+        <section>
+            <h2>注册步骤</h2>
+
+            <ol>
+                <li>填写用户名和密码。</li>
+                <li>填写个人基本信息。</li>
+                <li>选择兴趣爱好并上传头像。</li>
+                <li>检查注册信息。</li>
+                <li>点击“注册”完成注册。</li>
+            </ol>
+        </section>
+
+
+        <!-- 常见问题 -->
+        <section>
+            <h2>常见问题</h2>
+
+            <dl>
+                <dt>忘记密码怎么办？</dt>
+                <dd>可以通过账号绑定的邮箱找回密码。</dd>
+
+                <dt>手机号填写错误怎么办？</dt>
+                <dd>请检查手机号是否为11位数字。</dd>
+
+                <dt>头像可以上传多个吗？</dt>
+                <dd>本页面支持选择多个图片文件。</dd>
+            </dl>
+        </section>
+
+
+        <!-- 表格 -->
+        <section>
+            <h2>会员权益</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="3">会员权益对比</th>
+                    </tr>
+                    <tr>
+                        <th>权益</th>
+                        <th>普通会员</th>
+                        <th>高级会员</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>注册账号</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                    </tr>
+
+                    <tr>
+                        <td>个人资料</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                    </tr>
+
+                    <tr>
+                        <td>头像上传</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                    </tr>
+
+                    <tr>
+                        <td>专属服务</td>
+                        <td>不支持</td>
+                        <td>支持</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 用户注册页面</p>
+    </footer>
+
+
+    <script>
+        const form = document.getElementById("registerForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            console.log("===== 注册表单数据 =====");
+
+            for (const [name, value] of formData.entries()) {
+                console.log(name + ":", value);
+            }
+
+            const password = formData.get("password");
+             const confirmPassword = formData.get("confirmPassword");
+
+            if (password !== confirmPassword) {
+                alert("两次输入的密码不一致！");
+                return;
+            }
+
+            alert("注册成功！");
+        });
+    </script>
+
+</body>
+</html>
